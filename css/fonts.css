@@ -1,0 +1,14 @@
+@font-face{
+  font-family: "Play";
+  src: url('../fonts/Play/OFL.txt');
+}
+
+@font-face{
+  font-family: "Play-Regular";
+  src: url('../fonts/Play/Play-Regular.ttf');
+}
+
+@font-face{
+  font-family: "Play-Bold";
+  src: url('../fonts/Play/Play-Bold.ttf');
+}
