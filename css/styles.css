@@ -100,6 +100,9 @@ header .navbar-nav{
   padding-left: 10px;
   transition: 0.3s;
 }
+.cart a:hover{
+  color: rgb(255, 136, 0);
+}
 .signin {
   display: flex;
   width: 185px;
@@ -164,13 +167,15 @@ header .navbar-nav{
   padding: 0 30px 0 30px;
 }
 .card{
-  border-radius: 30px;
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card-img-top{
   transition: 0.5s
 }
-.card:hover{
-  transform: scale(1.05)
+.card-img-top:hover{
+  transform: scale(1.13)
 }
 .card-body{
   padding: 0.5rem 1rem 1rem 1rem;
@@ -183,40 +188,62 @@ header .navbar-nav{
 }
 .card-body a{
   margin-top: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 /*------INDEX BANNER'S ----*/
 .index-banner{
   margin: 60px 0 30px 0;
 }
-
+.index-banner3{
+  margin: 60px 0 30px 0;
+  border-bottom: 1px solid rgb(192, 185, 185);
+  border-top: 1px solid rgb(192, 185, 185);
+}
+/*--------------COLLECTOR'S LIMITED EDITIONS------*/
+.index-packs{
+  padding: 0 60px 0 60px;
+}
+.packs{
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.packedition img{
+  transition: 0.5s;
+}
+.packedition img:hover{
+  transform: scale(1.1)
+}
+/*---------------SOON IN FROM GAMES---------------*/
+.index-soonin{
+padding: 0 150px 40px 150px
+}
+.soonin img{
+  cursor: pointer;
+}
+.soonin img:hover{
+  transform: none;
+}
 /*-----FOOTER -----*/
-.row{
+footer.row{
   width: 100%;
 }
-
 footer{
   padding: 30px 50px 0 50px;
   color: rgb(255, 255, 255);
   background-color:  rgb(17, 17, 17);
 }
-
 .footer-subsection{
   height: 200px;
 }
-
 .creditcards{
   margin: 0;
-  padding: 0;
+  padding-left: 70px;
   font-size: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column: 4em;
-  grid-row: 25%;
-  
 }
-
 .cbook{
   width: 50px;
   height: 50px;
@@ -230,13 +257,22 @@ footer{
 .footer-info li{
   font-size: 15px;
 }
-
-footer span{
+footer .subfooter{
   font-size: 12px;
   padding: 10px;
   display: block;
   text-align: center;
   border-top: solid 1px rgb(255, 255, 255);
 }
-
-
+.redes-sociales a{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding-left: 10px;
+  transition: 0.3s;
+}
+#facebook:hover{
+  color: rgb(255, 136, 0);
+}
+#instagram:hover{
+  color: rgb(255, 136, 0);
+}
