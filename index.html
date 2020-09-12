@@ -10,10 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<a id="button"></a>
 
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i> TOP</button>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="#">
@@ -21,6 +20,9 @@
           loading="lazy">
         FROM GAMES
       </a>
+      <div class="cart">
+        <a href=""><i class="fas fa-shopping-cart"></i></a>
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,9 +41,6 @@
             <button type="submit" value="search"><i class="fas fa-search"></i></button>
           </div>
         </form>
-        <div class="cart">
-          <a href=""><i class="fas fa-shopping-cart"></i></a>
-        </div>
         <div class="signin">
           <a href="login.html">Sign In / Register</a>
         </div>
@@ -183,7 +182,12 @@
   </div>
   <!---------------FIRST BANNER--------------->
   <div class="index-banner">
-    <img src="images/img-index/index-banner.jpg" class="img-fluid" alt="Responsive image">
+    <picture>
+      <source srcset="images/img-index/index-banner.jpg" type="image/svg+xml" media="(min-width: 1400px)">
+      <source srcset="images/img-index/index-banner.jpg" type="image/svg+xml" media="(min-width: 650px)">
+      <source srcset="images/img-index/index-banner-mobile.jpg" type="image/svg+xml" media="(min-width: 650px)">
+      <img src="images/img-index/index-banner-mobile.jpg" class="img-fluid img-thumbnail" alt="...">
+    </picture>
   </div>
   <!---TITULO BESTSELLERS GAMES-->
   <div class="section-title">
@@ -264,7 +268,12 @@
   </div>
   <!---------------SECOND BANNER--------------->
   <div class="index-banner">
-    <img src="images/img-index/index-banner-2.jpg" class="img-fluid h-25" alt="Responsive image">
+    <picture>
+      <source srcset="images/img-index/index-banner-2.jpg" type="image/svg+xml" media="(min-width: 1400px)">
+      <source srcset="images/img-index/index-banner-2.jpg" type="image/svg+xml" media="(min-width: 650px)">
+      <source srcset="images/img-index/index-banner-2-mobile.jpg" type="image/svg+xml" media="(min-width: 650px)">
+      <img src="images/img-index/index-banner-2-mobile.jpg" class="img-fluid img-thumbnail" alt="...">
+    </picture>
   </div>
   <!---TITULO  GAMES-->
   <div class="section-title">
@@ -276,10 +285,11 @@
       <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2">
         <div class="col mb-3">
           <div class="packedition card">
-            <img class="card-img-top" src="images/img-index/collectionedition-daysgone.jpg" alt="Card image cap">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-index/collectionedition-daysgone.jpg" alt="Card image cap">
+            </div>
             <div class="packs card-body text-center">
-              <h6 class="card-title">DAYS GONE</h6>
-              <p class="card-text">PS4</p>
+              <h6 class="card-title">DAYS GONE - Collector's Edition</h6>
               <p class="card-text">Price: $250</p>
               <a href="#" class="btn btn-primary">Buy now!</a>
             </div>
@@ -287,10 +297,11 @@
         </div>
         <div class="col mb-3">
           <div class="packedition card">
-            <img class="card-img-top" src="images/img-index/collectionedition-godofwar.jpg" alt="Card image cap">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-index/collectionedition-godofwar.jpg" alt="Card image cap">
+            </div>
             <div class="packs card-body text-center">
-              <h6 class="card-title">GOD OF WAR</h6>
-              <p class="card-text">PS4</p>
+              <h6 class="card-title">GOD OF WAR - Collector's Edition</h6>
               <p class="card-text">Price: $250</p>
               <a href="#" class="btn btn-primary">Buy now!</a>
             </div>
@@ -298,10 +309,11 @@
         </div>
         <div class="col mb-3">
           <div class="packedition card">
-            <img class="card-img-top" src="images/img-index/collectionedition-spiderman.jpg" alt="Card image cap">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-index/collectionedition-spiderman.jpg" alt="Card image cap">
+            </div>
             <div class="packs card-body text-center">
-              <h6 class="card-title">SPIDER-MAN</h6>
-              <p class="card-text">PS4</p>
+              <h6 class="card-title">SPIDER-MAN - Collector's Edition</h6>
               <p class="card-text">Price: $250</p>
               <a href="#" class="btn btn-primary">Buy now!</a>
             </div>
@@ -309,10 +321,11 @@
         </div>
         <div class="col mb-3">
           <div class="packedition card">
-            <img class="card-img-top" src="images/img-index/collectionedition-thelastofus.jpg" alt="Card image cap">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-index/collectionedition-thelastofus.jpg" alt="Card image cap">
+            </div>
             <div class="packs card-body text-center">
-              <h6 class="card-title">THE LAST OF US - Part II</h6>
-              <p class="card-text">PS4 </p>
+              <h6 class="card-title">THE LAST OF US: Part II - Collector's Edition</h6>
               <p class="card-text">Price: $250</p>
               <a href="#" class="btn btn-primary">Buy now!</a>
             </div>
@@ -323,7 +336,12 @@
   </div>
   <!---------------SECOND BANNER--------------->
   <div class="index-banner3">
-    <img src="images/img-index/index-banner-3.jpg" class="img-fluid" alt="Responsive image">
+    <picture>
+      <source srcset="images/img-index/index-banner-3.jpg" type="image/svg+xml" media="(min-width: 1400px)">
+      <source srcset="images/img-index/index-banner-3.jpg" type="image/svg+xml" media="(min-width: 650px)">
+      <source srcset="images/img-index/index-banner-3-mobile.jpg" type="image/svg+xml" media="(min-width: 650px)">
+      <img src="images/img-index/index-banner-3-mobile.jpg" class="img-fluid img-thumbnail" alt="...">
+    </picture>
   </div>
   <!---TITULO  GAMES-->
   <div class="section-title">
@@ -358,9 +376,9 @@
         <div class="footer-subsection col mb-3">
           <div class="footer-title">
             <h4 class="text-center">Payment Methods</h4>
-            <div class="footer-info d-flex justify-content-center">
-              <div class="creditcards container">
-                <div class="row row-cols-2">
+            <div class="footer-info">
+              <div class="creditcards container d-flex justify-content-center">
+                <div class="row row-cols">
                   <div class="col">
                     <i class="fab fa-cc-visa"></i>
                   </div>
@@ -397,7 +415,7 @@
         <div class="footer-subsection col mb-3">
           <div class="footer-title">
             <h4 class="text-center">Client Service </h4>
-            <div class="footer-info">
+            <div class="footer-info d-flex justify-content-center">
               <ul>
                 <li>Warranty</li>
                 <li>Terms of Use</li>
@@ -410,7 +428,7 @@
         <div class="footer-subsection col mb-3">
           <div class="footer-title">
             <h4 class="text-center">Contac Us</h4>
-            <div class="footer-info">
+            <div class="footer-info d-flex justify-content-center">
               <ul>
                 <li>Central telephone:<br><a href="https://wa.me/51977600468" target="_blank">+051 977 600 468</a>
                 </li>
@@ -423,7 +441,7 @@
         <div class="footer-subsection col mb-3">
           <div class="footer-title">
             <h4 class="text-center">Categories</h4>
-            <div class="footer-info">
+            <div class="footer-info d-flex justify-content-center">
               <ul>
                 <li>+News</li>
                 <li>Games Store</li>

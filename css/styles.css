@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
- 
 html, body{
   font-family: "Play-Regular";
   font-weight: 200;
@@ -17,54 +16,44 @@ header {
   left: 0;
   z-index: 99;
 }
-
 header .navbar{
   width: 100%;
 }
-
 .navbar-dark .navbar-toggler{
   outline: none;
   border: none;
 }
-
 header .navbar-nav{
   width: 50%;
   display: flex;
   justify-content: space-around;
 }
-
 .navbar-collapse{
   justify-content: space-around;
 }
-
 .navbar-nav a{
   border-radius: 50px;
   border: solid 1px rgb(0, 0, 0);
   transition: 0.3s;
 }
-
 .navbar-nav ul li a{
   transition: 0.3s;
 }
-
 .navbar-nav a:hover{
   cursor: pointer;
   background-color: rgb(255, 136, 0);
   border-radius: 50px;
-  border: solid 1px rgb(0, 0, 0);
-  
+  border: solid 1px rgb(0, 0, 0); 
 }
 .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
   color: rgb(0, 0, 0);
 }
-
 .search {
   display: flex;
   align-items: center;
-  width: 300px;
+  width: 100%;
   margin: 10px 0 10px 0;
 }
-
 .search input {
   width: 100%;
   border: 2px solid rgb(255, 255, 255);
@@ -75,7 +64,6 @@ header .navbar-nav{
   border-radius: 50px 0 0 50px;
   outline: none;
 }
-
 .search button {
   width: 30px;
   height: 34px;
@@ -197,13 +185,8 @@ header .navbar-nav{
   border-top: 1px solid rgb(192, 185, 185);
 }
 /*--------------COLLECTOR'S LIMITED EDITIONS------*/
-.index-packs{
-  padding: 0 60px 0 60px;
-}
-.packs{
-  display: inline-flex;
-  align-items: baseline;
-  justify-content: space-around;
+.img-pack{
+  overflow: hidden;
 }
 .packedition img{
   transition: 0.5s;
@@ -211,6 +194,7 @@ header .navbar-nav{
 .packedition img:hover{
   transform: scale(1.1)
 }
+
 /*---------------SOON IN FROM GAMES---------------*/
 .index-soonin{
 padding-bottom: 40px 
@@ -234,11 +218,7 @@ footer{
   height: 200px;
 }
 .creditcards{
-  margin: 0;
-  padding-left: 70px;
   font-size: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 .cbook{
   width: 50px;
@@ -272,11 +252,7 @@ footer .subfooter{
 #instagram:hover{
   color: rgb(255, 136, 0);
 }
-
-
-
-
-
+/*---------- BACK TO TOP BUTTON--------*/
 #myBtn {
   display: none; 
   position: fixed; 
@@ -288,8 +264,8 @@ footer .subfooter{
   background-color: rgb(255, 136, 0);
   color: rgb(0, 0, 0); 
   cursor: pointer; 
-  padding: 15px; 
-  border-radius: 20px; 
+  padding: 12px; 
+  border-radius: 100px; 
   font-size: 18px; 
   transition: 0.5s;
 }
