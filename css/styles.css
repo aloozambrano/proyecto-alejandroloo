@@ -129,7 +129,7 @@ header .navbar-nav{
 }
 /*--------------- ANIMACIÓN FLECHA---------------*/
 .arrow-down{
-  margin-top: 60px;
+  margin-top: 40px;
   width: 100%;
   height: 40px;
   display: flex;
@@ -277,35 +277,144 @@ footer .subfooter{
 .news-title{
   padding: 30px 0 30px 0;
 }
+/*----ESPORTS EPORTS ESPORTS ESPORTS ESPORTS ESPORTS ESPORTS----*/
+.esports-banner-description{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+}
+.subtitle-esports{
+  padding: 20px 0 20px 0;
+}
+.title-categories{
+  padding-top: 40px;
+}
+/*----- GALLERY -----*/
 
+.gallery-section{
+  padding: 60px 0; 
+}
+.gallery-section h2{
+color: #333333;
+text-transform: uppercase;
+font-size: 1.6em;
 
+}
+.gallery-section .gallery-box{
+  background: #fff;
+  padding: 15px;
+  display: grid;
+      grid-template-columns: repeat(5, auto);
+    /*grid-template-rows: repeat(1, 18vw);*/
+    grid-auto-rows: 16vw;
+      grid-gap: 1rem;
+      grid-auto-flow: dense;
+}
+.gallery-section .gallery-box .box{
+    display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 15px 4px 15px 4px;
+  box-shadow: 0px 4px 20px -4px rgba(0, 0, 0, 0.15);
+  transition: all .5s ease;
+}
+.gallery-section .gallery-box .box:hover{
+  box-shadow: 0px 4px 40px -4px rgba(0, 0, 0, 0.3);
+}
+.gallery-section .gallery-box .box.big {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  
+.gallery-section .gallery-box .box.horizontal {
+    grid-column: span 2;
+  }
+
+.gallery-section .gallery-box .box.vertical {
+    grid-row: span 2;
+}
+.gallery-section .gallery-box .box img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all .5s ease;
+}
+.gallery-section .gallery-box .box:hover img{
+  transform: scale(1.2);
+}
+
+@media (max-width: 991px) {
+  .gallery-section .gallery-box{
+        grid-template-columns: repeat(4, auto);
+        grid-auto-rows: 18vw;
+    }
+}
+@media (max-width: 767px) {
+  .gallery-section .gallery-box{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media (max-width: 575px) {
+  .gallery-section .gallery-box{
+        grid-template-columns: repeat(2, auto);
+          grid-auto-rows: 35vw;
+    }
+}
+/*----------LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN ------------*/
+.main-login{
+  height: 100vh;
+  padding-top: 15px;
+  background-image: url("../images/img-login/darksouls.jpg");
+  background-size: cover;
+}
+.login-sidebar form{
+  border-radius: 20px;
+  width: 400px;
+  height: 600px;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: rgba(44, 42, 42, 0.8);
+  color: rgb(255, 255, 255);
+}
+.button-submit{
+  margin-bottom: 20px;
+}
+.button-submit button{
+  width: 100%;
+}
+.form-separator{
+  margin: 10px 0 10px 0;
+}
+/*----MEDIA QUERYS------MEDIA QUERYS-----MEDIA QUERYS------*/
 @media (max-width: 576px) {
   .news-title h1{
     font-size: 10px;
     color: red;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   .news-title h1{
     font-size: 20px;
     color: blue;
   }
 }
-
 @media (min-width: 768px) and (max-width: 992px){
   .news-title h1{
     font-size: 40px;
     color: purple;
   }
 }
-
 @media (min-width: 992px) {
   .news-title h1{
     font-size: 60px;
     color: yellow;
   }
-  .main-news{
-    padding: 0 60px 30px 60px;
+  .main-news, .main-esports{
+    padding: 0 80px 30px 80px;
   }
+  /*---ESPORTS TABLAS DE PREMIOS---*/
+.esports-tables{
+  padding: 0 200px 0 200px;
+}
+
 }
