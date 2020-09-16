@@ -1,0 +1,49 @@
+Package.json - Explicación
+
+author = Nombre del autor, o la empresa, email también si quieren.
+description = Descripción del proyecto, del paquete
+license = MIT
+name = Nombre del paquete, no puede tener espacios en blanco, ni letras en mayusculas.
+Scripts = Los scripts que se van a ejecutar en la consola (lo que ustedes van a escribir para que "ejecute" el codigo)
+   watch:css = Compila el SCSS y lo convierte a CSS (además hace minificado) y se queda observando cambios a través de nodemon
+   build:css = Compila el SCSS y lo convierte a CSS (además hace minificado)
+   css = Hace EFECTIVAMENTE la compilacion (los anteriores llaman internamente a este (npm run css). Además comprime (minimifica) el css en una linea.
+          En esta linea debemos reemplazar la carpeta "scss/estilos.scss" por su carpeta y su archivo scss que tiene todos los includes. 
+	  Además reemplazar la carpeta "css/main.css" por la carpeta y el archivo que quieren que se genere final con el css.
+     css-autoprefixer = Realiza el autoprefijo de las propiedades css necesarias (https://lenguajecss.com/postcss/plugins/autoprefixer/) 
+				(https://lenguajecss.com/css/introduccion/niveles-y-prefijos-css/#prefijos)
+version = La version de su paquete
+devDependencies = Son las dependencias (librerias) que necesitan instalarse para que funcione.
+
+-----------------------------
+Una vez creado / copiado su package.json deben ir a la consola, a la ruta donde tienen el package.json y ejecutar:
+
+npm install 
+
+Esto les va a crear un package-lock.json y una carpeta "node_modules" con un montonaso de librerias que necesita npm para funcionar.
+
+----------------------------
+
+Una ves terminado pueden ejecutar:
+
+npm run build:css 
+
+npm run watch:css 
+
+Ejecutar: npm install -D node-sass nodemon 
+En caso salga este error:
+"nodemon" no se reconoce como un comando interno o externo,
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! nombre-de-mi-package@1.0.0 watch:css: `nodemon -e scss -x "npm run build:css"`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the nombre-de-mi-package@1.0.0 watch:css script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Alejandro\AppData\Roaming\npm-cache\_logs\2020-09-15T17_05_05_240Z-debug.log
+
+El primero compilara el css y creara un archivo main.css dentro de su carpeta css con todo el codigo tomado de la carpeta scss 
+
+El segundo hara lo mismo que el primero, y se quedara esperando a cualquier cambio que realicen en SCSS para que se compile automaticamente a CSS.
