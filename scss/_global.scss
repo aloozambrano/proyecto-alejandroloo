@@ -16,110 +16,135 @@ header {
   top: 0;
   left: 0;
   z-index: 99;
+
+  .navbar{
+    width: 100%;
+    .mobile-search a{
+      color: rgb(255, 255, 255);
+      font-size: 25px;
+      padding-left: 10px;
+      transition: 0.3s;
+      &:hover{
+        color: rgb(255, 136, 0);
+      }
+    }
+    
+    .mobile-cart a{
+      color: rgb(255, 255, 255);
+      font-size: 25px;
+      padding-left: 10px;
+      transition: 0.3s;
+      &:hover{
+        color: rgb(255, 136, 0);
+      }
+    }
+    
+    .navbar-dark .navbar-toggler{
+      outline: none;
+      border: none;
+    }
+    
+    .navbar-collapse{
+      justify-content: space-around;
+      .navbar-nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        ul li a{
+          transition: 0.3s;
+        }
+        a{
+          border-radius: 50px;
+          border: solid 1px rgb(0, 0, 0);
+          transition: 0.3s;
+          &:hover{
+            cursor: pointer;
+            background-color: rgb(255, 136, 0);
+            border-radius: 50px;
+            border: solid 1px rgb(0, 0, 0); 
+          }
+        }
+      }
+      .search{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 10px 0 10px 0;
+        input{
+          width: 100%;
+          border: 2px solid rgb(255, 255, 255);
+          border-right: none;
+          padding: 15px;
+          margin: 0;
+          height: 20px;
+          border-radius: 50px 0 0 50px;
+          outline: none;
+        }
+        button{
+          width: 30px;
+          height: 34px;
+          margin: 0;
+          border: 2px solid rgb(255, 255, 255);
+          background-color: rgb(255, 255, 255);
+          text-align: center;
+          color: rgb(32, 62, 74);
+          border-radius: 0 50px 50px 0;
+          cursor: pointer;
+          font-size: 10px;
+          transition: 0.3s;
+        }
+      }
+      .cart a{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        padding-left: 10px;
+        transition: 0.3s;
+        &:hover{
+          color: rgb(255, 136, 0);
+        }
+      }
+      .signin{
+        display: flex;
+        width: 185px;
+        a{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: solid 2px rgb(255, 255, 255);
+          border-radius: 50px;
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+          width: 180px;
+          height: 35px;
+          transition: 0.3s;
+          &:hover{
+            background-color: rgb(255, 136, 0);
+            border: solid 2px rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+          }
+        }
+      }
+    }
+  }
 }
-header .navbar{
-  width: 100%;
-}
-.navbar-dark .navbar-toggler{
-  outline: none;
-  border: none;
-}
-header .navbar-nav{
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-}
-.navbar-collapse{
-  justify-content: space-around;
-}
-.navbar-nav a{
-  border-radius: 50px;
-  border: solid 1px rgb(0, 0, 0);
-  transition: 0.3s;
-}
-.navbar-nav ul li a{
-  transition: 0.3s;
-}
-.navbar-nav a:hover{
-  cursor: pointer;
-  background-color: rgb(255, 136, 0);
-  border-radius: 50px;
-  border: solid 1px rgb(0, 0, 0); 
-}
+
 .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
   color: rgb(0, 0, 0);
 }
-.search {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0 10px 0;
-}
-.search input {
-  width: 100%;
-  border: 2px solid rgb(255, 255, 255);
-  border-right: none;
-  padding: 15px;
-  margin: 0;
-  height: 20px;
-  border-radius: 50px 0 0 50px;
-  outline: none;
-}
-.search button {
-  width: 30px;
-  height: 34px;
-  margin: 0;
-  border: 2px solid rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  color: rgb(32, 62, 74);
-  border-radius: 0 50px 50px 0;
-  cursor: pointer;
-  font-size: 10px;
-  transition: 0.3s;
-}
-.cart a{
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  padding-left: 10px;
-  transition: 0.3s;
-}
-.cart a:hover{
-  color: rgb(255, 136, 0);
-}
-.signin {
-  display: flex;
-  width: 185px;
-}
-.signin a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 2px rgb(255, 255, 255);
-  border-radius: 50px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  width: 180px;
-  height: 35px;
-  transition: 0.3s;
-}
-.signin a:hover{
-  background-color: rgb(255, 136, 0);
-  border: solid 2px rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
-}
-/*----------------- FIRST BANNER ---------------*/
+
+/*----------------- BANNER PRINCIPAL---------------*/
 .carousel {
-  background: black;
+  background: rgb(255, 255, 255);
   width: 100%;
+  .carousel-caption{
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 40px;
+     p{
+      margin-bottom: 15px;
+    }
+  }
 }
-.carousel-caption{
-  background-color: rgba(0, 0, 0, .5);
-  border-radius: 40px;
-}
-.carousel-caption p{
-  margin-bottom: 15px;
-}
+
 /*-----BANNER MOBILE-----*/
 .img-thumbnail {
   padding: 0;
@@ -150,35 +175,40 @@ header .navbar-nav{
 .section-title__text{
   font-size: 30px;
 }
-/*------- GAMES-------*/
-.index-carousel-games{
+/*------------------ GAMES CAROUSEL---------------------------*/
+.presale-carousel-games, .bestsellers-carousel-games, .mobile-index-carousel{
   padding: 0 30px 0 30px;
+}
+.mobile-index{
+  padding: 15px;
 }
 .card{
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.card-img-top{
-  overflow: hidden;
-  transition: 0.5s
-}
-.card-img-top:hover{
-  transform: scale(1.10)
-}
-.card-body{
-  padding: 0.5rem 1rem 1rem 1rem;
-}
-.card-body h6{
-  font-family: "Play-Bold";
-}
-.card-body h6,p{
-  margin-bottom: 0;
-}
-.card-body a{
-  margin-top: 10px;
-  border-radius: 10px;
-  transition: 0.3s;
+  .img-card, .img-news, .img-esports, .img-pack{
+    overflow: hidden;
+    .card-img-top{
+      transition: 0.5s;
+      &:hover{
+        transform: scale(1.10)
+      }
+    }
+  }
+  .card-body{
+    padding: 0.5rem 1rem 1rem 1rem;
+    h6{
+      font-family: "Play-Bold";
+    }
+    h6,p{
+      margin-bottom: 0;
+    }
+    a{
+      margin-top: 10px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+  }
 }
 /*------INDEX BANNER'S ----*/
 .index-banner{
@@ -189,74 +219,71 @@ header .navbar-nav{
   border-bottom: 1px solid rgb(192, 185, 185);
   border-top: 1px solid rgb(192, 185, 185);
 }
-/*--------------COLLECTOR'S LIMITED EDITIONS------*/
-.img-pack{
-  overflow: hidden;
-}
-.packedition img{
-  transition: 0.5s;
-}
-.packedition img:hover{
-  transform: scale(1.1)
-}
-
 /*---------------SOON IN FROM GAMES---------------*/
 .index-soonin{
-padding-bottom: 40px 
+  padding-bottom: 40px; 
+  .soonin img{
+    cursor: pointer;
+    
+    &:hover{
+      transform: none;
+    }
+  }
 }
-.soonin img{
-  cursor: pointer;
-}
-.soonin img:hover{
-  transform: none;
-}
-/*-----FOOTER -----*/
-footer.row{
-  width: 100%;
-}
+
+/*----------------------- FOOTER --------------------*/
 footer{
   padding: 30px 50px 0 50px;
   color: rgb(255, 255, 255);
   background-color:  rgb(17, 17, 17);
+  .row{
+    width: 100%;
+    .footer-subsection{
+      height: 200px;
+      .footer-title {
+        h4{
+        font-family: "Play-Bold";
+        font-size: 18px;
+        margin-bottom: 20px;
+        }
+        .footer-info{
+          li{font-size: 15px;
+          }
+          .creditcards{
+            font-size: 30px;
+          }
+          .cbook{
+            width: 50px;
+            height: 50px;
+            font-size: 60px;
+          }
+        }
+      }  
+    }
+  }
+  .subfooter{
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-top: solid 1px rgb(255, 255, 255);
+  }
 }
-.footer-subsection{
-  height: 200px;
-}
-.creditcards{
-  font-size: 30px;
-}
-.cbook{
-  width: 50px;
-  height: 50px;
-  font-size: 60px;
-}
-.footer-title h4{
-  font-family: "Play-Bold";
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-.footer-info li{
-  font-size: 15px;
-}
-footer .subfooter{
-  font-size: 12px;
-  padding: 10px;
-  display: block;
-  text-align: center;
-  border-top: solid 1px rgb(255, 255, 255);
-}
-.redes-sociales a{
+/*---------- INCONOS DE REDES CSOCIALES FOLLOW US---------*/
+.redes-sociales{ 
+  a{
   color: rgb(255, 255, 255);
   font-size: 30px;
   padding-left: 10px;
   transition: 0.3s;
-}
-#facebook:hover{
-  color: rgb(255, 136, 0);
-}
-#instagram:hover{
-  color: rgb(255, 136, 0);
-}
+    #facebook:hover{
+      color: rgb(255, 136, 0);
+    }
+    #instagram:hover{
+      color: rgb(255, 136, 0);
+    }
+  }
+} 
 /*---------- BACK TO TOP BUTTON--------*/
 #myBtn {
   display: none; 
@@ -348,24 +375,6 @@ font-size: 1.6em;
 .gallery-section .gallery-box .box:hover img{
   transform: scale(1.2);
 }
-
-@media (max-width: 991px) {
-  .gallery-section .gallery-box{
-        grid-template-columns: repeat(4, auto);
-        grid-auto-rows: 18vw;
-    }
-}
-@media (max-width: 767px) {
-  .gallery-section .gallery-box{
-        grid-template-columns: repeat(3, auto);
-    }
-}
-@media (max-width: 575px) {
-  .gallery-section .gallery-box{
-        grid-template-columns: repeat(2, auto);
-          grid-auto-rows: 35vw;
-    }
-}
 /*----------LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN ------------*/
 .main-login{
   height: 100vh;
@@ -394,26 +403,64 @@ font-size: 1.6em;
 }
 /*----MEDIA QUERYS------MEDIA QUERYS-----MEDIA QUERYS------*/
 @media (max-width: 576px) {
+  .navbar-collapse .cart, form{
+    display: none;
+  }
+  .categories{
+    display: none;
+  }
   .main-login{
     height: 100%;
   }
   .login-sidebar form{
     width: 300px;
   }
+  .presale-carousel-games, .bestsellers-carousel-games{
+    display: none;
+  }
+  /*---ESPORTS GALERÍA---*/
+  .gallery-section .gallery-box{
+    grid-template-columns: repeat(2, auto);
+    grid-auto-rows: 35vw;
+  }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .news-title h1{
-    font-size: 20px;
-    color: blue;
+  .navbar-collapse .cart, form{
+    display: none;
+  }
+  .mobile-index-carousel{
+    display: none;
+  }
+  /*---ESPORTS GALERÍA---*/
+  .gallery-section .gallery-box{
+    grid-template-columns: repeat(3, auto);
   }
 }
 @media (min-width: 768px) and (max-width: 992px){
+  .navbar-collapse .cart, form{
+    display: none;
+  }
   .news-title h1{
     font-size: 40px;
     color: purple;
   }
+  .mobile-index-carousel{
+    display: none;
+  }
+  /*---ESPORTS GALERÍA---*/
+  .gallery-section .gallery-box{
+    grid-template-columns: repeat(4, auto);
+    grid-auto-rows: 18vw;
+  }
 }
 @media (min-width: 992px) {
+  /*---- BOTONES DE SERACH Y SIGNIN / CAROUSEL MOBILE---*/
+  .mobile-search, .mobile-cart, .mobile-index-carousel{
+    display: none;
+  }
+  .index-soonin{
+    padding: 0 100px 0 100px;
+  }
   .news-title h1{
     font-size: 60px;
     color: yellow;

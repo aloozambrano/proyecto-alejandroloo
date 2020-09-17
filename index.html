@@ -20,6 +20,14 @@
           loading="lazy">
         FROM GAMES
       </a>
+      <!---------BOTONES MOBILE-------->
+      <div class="mobile-search">
+        <a href="#"><i class="fas fa-search"></i></a>
+      </div>
+      <div class="mobile-cart">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -47,7 +55,7 @@
       </div>
     </nav>
   </header>
-  <!---------------- FIRST BANNER ----------------->
+  <!---------------- BANNER PRINICPAL ----------------->
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -108,12 +116,14 @@
     <h2 class="section-title__text text-center">PRESALES</h2>
   </div>
   <!--------------PRESALE GAMES---------------->
-  <div class="index-carousel-games">
+  <div class="presale-carousel-games">
     <div class="container-fluid d-flex justify-content-center">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6">
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/presale/presale-cyberpunk.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-cyberpunk.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">CYBERPUNK 2077</h6>
               <p class="card-text">Play Station 4</p>
@@ -124,7 +134,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/presale/presale-halo5.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-halo5.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">HALO 5</h6>
               <p class="card-text">Xbox ONE</p>
@@ -135,7 +147,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/presale/presale-supercampeones.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-supercampeones.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">CAPTAIN TSUBASA</h6>
               <p class="card-text">Nintendo Switch</p>
@@ -146,7 +160,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/presale/presale-pokemonshield.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-pokemonshield.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">POKEMON SHIELD</h6>
               <p class="card-text">Nintendo Switch</p>
@@ -157,7 +173,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/presale/presale-fifa21.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-fifa21.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">FIFA 21</h6>
               <p class="card-text">Xbox ONE</p>
@@ -168,7 +186,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/presale/presale-assasinscreed.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-assasinscreed.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">ASSASSIN'S CREED</h6>
               <p class="card-text">Play Station 4</p>
@@ -179,6 +199,85 @@
         </div>
       </div>
     </div>
+  </div>
+  <!-----------------------PRESALE MOBILE SLIDER----------------------->
+  <div id="carouselExampleControls" class="mobile-index-carousel carousel slide" data-ride="carousel">
+    <div class="mobile-index carousel-inner">
+      <div class="carousel-item active">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/presale/presale-cyberpunk.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">CYBERPUNK 2077</h6>
+            <p class="card-text">Play Station 4</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Reserve now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/presale/presale-halo5.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">HALO 5</h6>
+            <p class="card-text">Xbox ONE</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Reserve now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/presale/presale-supercampeones.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">CAPTAIN TSUBASA</h6>
+            <p class="card-text">Nintendo Switch</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Reserve now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/presale/presale-pokemonshield.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">POKEMON SHIELD</h6>
+            <p class="card-text">Nintendo Switch</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Reserve now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/presale/presale-fifa21.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">FIFA 21</h6>
+            <p class="card-text">Xbox ONE</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Reserve now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/presale/presale-assasinscreed.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">ASSASSIN'S CREED</h6>
+            <p class="card-text">Play Station 4</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Reserve now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
   <!---------------FIRST BANNER--------------->
   <div class="index-banner">
@@ -194,12 +293,14 @@
     <h2 class="section-title__text text-center">BESTSELLERS OF THE WEEK</h2>
   </div>
   <!--------------BESTSELLERS GAMES---------------->
-  <div class="index-carousel-games">
+  <div class="bestsellers-carousel-games">
     <div class="container-fluid d-flex justify-content-center">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6">
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/bestsellers/ps-godofwar3.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/ps-godofwar3.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">GOD OF WAR 3</h6>
               <p class="card-text">Play Station 4</p>
@@ -210,7 +311,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/bestsellers/x-sekiro.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/x-sekiro.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">SEKIRO</h6>
               <p class="card-text">Xbox ONE</p>
@@ -221,7 +324,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/bestsellers/nintendo-doom.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/nintendo-doom.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">D O O M</h6>
               <p class="card-text">Nintendo Switch</p>
@@ -232,7 +337,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/bestsellers/nintendo-zelda.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/nintendo-zelda.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">LEGEND OF ZELDA</h6>
               <p class="card-text">Nintendo Switch</p>
@@ -243,7 +350,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/bestsellers/x-deadspace.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/x-deadspace.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">DEAD SPACE 3</h6>
               <p class="card-text">Xbox ONE</p>
@@ -254,7 +363,9 @@
         </div>
         <div class="col mb-3">
           <div class="card">
-            <img class="card-img-top" src="images/img-games/bestsellers/ps-callofduty.jpg" alt="Card image cap">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/ps-callofduty.jpg" alt="Card image cap">
+            </div>
             <div class="card-body text-center">
               <h6 class="card-title">INFINITE WARFARE</h6>
               <p class="card-text">Play Station 4</p>
@@ -265,6 +376,85 @@
         </div>
       </div>
     </div>
+  </div>
+  <!-----------------------BESTSELLERS MOBILE SLIDER----------------------->
+  <div id="carouselExampleControls" class="mobile-index-carousel carousel slide" data-ride="carousel">
+    <div class="mobile-index carousel-inner">
+      <div class="carousel-item active">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/bestsellers/ps-godofwar3.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">GOD OF WAR 3</h6>
+            <p class="card-text">Play Station 4</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Buy now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/bestsellers/x-sekiro.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">SEKIRO</h6>
+            <p class="card-text">Xbox ONE</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Buy now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/bestsellers/nintendo-doom.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">D O O M</h6>
+            <p class="card-text">Nintendo Switch</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Buy now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/bestsellers/nintendo-zelda.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">LEGEND OF ZELDA</h6>
+            <p class="card-text">Nintendo Switch</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Buy now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/bestsellers/x-deadspace.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">DEAD SPACE 3</h6>
+            <p class="card-text">Xbox ONE</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Buy now!</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img class="card-img-top" src="images/img-games/bestsellers/ps-callofduty.jpg" alt="Card image cap">
+          <div class="card-body text-center">
+            <h6 class="card-title">INFINITE WARFARE</h6>
+            <p class="card-text">Play Station 4</p>
+            <p class="card-text">Price: $40</p>
+            <a href="#" class="btn btn-danger">Buy now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
   <!---------------SECOND BANNER--------------->
   <div class="index-banner">
@@ -438,7 +628,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-subsection col mb-3">
+        <div class="categories footer-subsection col mb-3">
           <div class="footer-title">
             <h4 class="text-center">Categories</h4>
             <div class="footer-info d-flex justify-content-center">
