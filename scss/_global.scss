@@ -20,23 +20,11 @@ header {
   .navbar{
     width: 100%;
     .mobile-search a{
-      color: rgb(255, 255, 255);
-      font-size: 25px;
-      padding-left: 10px;
-      transition: 0.3s;
-      &:hover{
-        color: rgb(255, 136, 0);
-      }
+      @include icon-mobile;
     }
     
     .mobile-cart a{
-      color: rgb(255, 255, 255);
-      font-size: 25px;
-      padding-left: 10px;
-      transition: 0.3s;
-      &:hover{
-        color: rgb(255, 136, 0);
-      }
+      @include icon-mobile;
     }
     
     .navbar-dark .navbar-toggler{
@@ -95,13 +83,7 @@ header {
         }
       }
       .cart a{
-        color: rgb(255, 255, 255);
-        font-size: 25px;
-        padding-left: 10px;
-        transition: 0.3s;
-        &:hover{
-          color: rgb(255, 136, 0);
-        }
+        @include icon-mobile;
       }
       .signin{
         display: flex;

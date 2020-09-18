@@ -23,3 +23,15 @@ $font-size-base: 16px !default;
 /* Colors */
 $black: #222222;
 $gray: #CCC;
+
+
+/*---- MIXIN ICONOS MOBILE ----*/
+@mixin icon-mobile {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding-left: 10px;
+  transition: 0.3s;
+  &:hover{
+    color: rgb(255, 136, 0);
+  }
+}
