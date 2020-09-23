@@ -232,8 +232,11 @@ footer{
           li{font-size: 15px;
           }
           .creditcards{
-            font-size: 30px;
-          }
+            padding: 5px 50px 50px 50px;
+           img{
+            width: 100%;
+            }
+          }          
           .cbook{
             width: 50px;
             height: 50px;
@@ -249,23 +252,13 @@ footer{
     display: block;
     text-align: center;
     border-top: solid 1px rgb(255, 255, 255);
+    /*---------- INCONOS DE REDES CSOCIALES FOLLOW US---------*/
+    .redes-sociales a{
+      @include icon-mobile;        
+    } 
   }
 }
-/*---------- INCONOS DE REDES CSOCIALES FOLLOW US---------*/
-.redes-sociales{ 
-  a{
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  padding-left: 10px;
-  transition: 0.3s;
-    #facebook:hover{
-      color: rgb(255, 136, 0);
-    }
-    #instagram:hover{
-      color: rgb(255, 136, 0);
-    }
-  }
-} 
+
 /*---------- BACK TO TOP BUTTON--------*/
 #myBtn {
   display: none; 
