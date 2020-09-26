@@ -134,6 +134,7 @@ header {
   border: none;
   max-width: 100%;
   height: auto;
+  border-radius: 0;
 }
 /*--------------- ANIMACIÓN FLECHA---------------*/
 .arrow-down{
@@ -282,7 +283,7 @@ footer{
 }
 /*----NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS-----*/
 .news-title{
-  padding: 30px 0 30px 0;
+  padding: 0px 0 50px 0;
 }
 /*----ESPORTS EPORTS ESPORTS ESPORTS ESPORTS ESPORTS ESPORTS----*/
 .esports-banner-description{
@@ -354,7 +355,7 @@ font-size: 1.6em;
 .main-login{
   height: 100vh;
   padding: 15px 0 30px 15px;
-  background-image: url("../images/img-login/darksouls.jpg");
+  background-image: url("../images/img-login/eternal.jpg");
   background-size: cover;
 }
 .login-sidebar{
@@ -448,3 +449,5 @@ font-size: 1.6em;
     padding: 0 200px 0 200px;
   }
 }
+
+
