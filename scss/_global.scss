@@ -357,41 +357,36 @@ font-size: 1.6em;
   padding: 15px 0 30px 15px;
   background-image: url("../images/img-login/eternal.jpg");
   background-size: cover;
+  .login-sidebar{
+    margin-top: 20px;
+    form{
+      border-radius: 20px;
+      padding: 20px;
+      background-color: rgba(44, 42, 42, 0.8);
+      color: rgb(255, 255, 255);
+      .button-submit{
+        margin-bottom: 20px;
+        button{
+          width: 100%;
+        }
+      }
+      .form-separator{
+        margin: 10px 0 10px 0;
+      }
+    }
+  }
 }
-.login-sidebar{
-  margin-top: 20px;
-}
-.login-sidebar form{
-  border-radius: 20px;
-  width: 400px;
-  padding: 20px;
-  background-color: rgba(44, 42, 42, 0.8);
-  color: rgb(255, 255, 255);
-}
-.button-submit{
-  margin-bottom: 20px;
-}
-.button-submit button{
-  width: 100%;
-}
-.form-separator{
-  margin: 10px 0 10px 0;
-}
+
 /*----MEDIA QUERYS------MEDIA QUERYS-----MEDIA QUERYS------*/
 @media (max-width: 576px) {
-  .navbar-collapse .cart, form{
+  .navbar-collapse .cart{
     display: none;
-  }
-  .categories{
-    display: none;
-  }
-  .main-login{
-    height: 100%;
-  }
-  .login-sidebar form{
-    width: 300px;
   }
   .presale-carousel-games, .bestsellers-carousel-games{
+    display: none;
+  }
+  /*--- FOOTER CATEGORIES ---*/
+  .categories{
     display: none;
   }
   /*---ESPORTS GALERÍA---*/
@@ -399,9 +394,16 @@ font-size: 1.6em;
     grid-template-columns: repeat(2, auto);
     grid-auto-rows: 35vw;
   }
+  /*--- LOGIN ---*/
+  .main-login{
+    height: 100vh;
+  }
+  .login-sidebar form{
+    width: 300px;
+  }
 }
 @media (min-width: 576px) and (max-width: 768px) {
-  .navbar-collapse .cart, form{
+  .navbar-collapse .cart{
     display: none;
   }
   .mobile-index-carousel{
@@ -411,9 +413,13 @@ font-size: 1.6em;
   .gallery-section .gallery-box{
     grid-template-columns: repeat(3, auto);
   }
+  /*--- LOGIN ---*/
+  .login-sidebar form{
+    width: 300px;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px){
-  .navbar-collapse .cart, form{
+  .navbar-collapse .cart{
     display: none;
   }
   .news-title h1{
@@ -427,6 +433,10 @@ font-size: 1.6em;
   .gallery-section .gallery-box{
     grid-template-columns: repeat(4, auto);
     grid-auto-rows: 18vw;
+  }
+  /*--- LOGIN ---*/
+  .login-sidebar form{
+    width: 400px;
   }
 }
 @media (min-width: 992px) {
@@ -447,6 +457,10 @@ font-size: 1.6em;
   /*---ESPORTS TABLAS DE PREMIOS---*/
   .esports-tables{
     padding: 0 200px 0 200px;
+  }
+  /*--- LOGIN ---*/
+  .login-sidebar form{
+    width: 400px;
   }
 }
 
