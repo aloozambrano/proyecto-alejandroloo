@@ -282,8 +282,38 @@ footer{
   color: rgb(255, 136, 0); 
 }
 /*----NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS NEWS-----*/
-.news-title{
-  padding: 0px 0 50px 0;
+
+/*---------- GAMESSTORE GAMESSTORE GAMESSTORE GAMESSTORE---------*/
+.filter-list {
+  text-align: center;
+  padding: 20px 0 40px 0;
+  width: 100%;
+}
+.gamestore-filter{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.gamestore-filter .btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+}
+.gamestore-filter .btn{
+  color: rgb(0, 0, 0);
+  border: solid 2px rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.gamestore-filter .btn.active{
+  background: rgb(255, 136, 0);
+}
+.gamestore-filter .btn:hover {
+  background: rgb(255, 136, 0);
+  border-radius: 10px;
+}
+.gamestore-cards{
+  padding: 0 50px 50px 50px;
 }
 /*----ESPORTS EPORTS ESPORTS ESPORTS ESPORTS ESPORTS ESPORTS----*/
 .esports-banner-description{
@@ -389,6 +419,14 @@ font-size: 1.6em;
   .categories{
     display: none;
   }
+  /*--- GAMESTORE ---*/
+  .gamestore-filter{
+    padding: 0 100px 30px 100px;
+    flex-direction: column;
+    .btn{
+      margin-bottom: 20px;
+    }
+  } 
   /*---ESPORTS GALERÍA---*/
   .gallery-section .gallery-box{
     grid-template-columns: repeat(2, auto);
@@ -409,6 +447,14 @@ font-size: 1.6em;
   .mobile-index-carousel{
     display: none;
   }
+  /*--- GAMESTORE ---*/
+  .gamestore-filter{
+    padding: 0 200px 30px 200px;
+    flex-direction: column;
+    .btn{
+      margin-bottom: 20px;
+    }
+  } 
   /*---ESPORTS GALERÍA---*/
   .gallery-section .gallery-box{
     grid-template-columns: repeat(3, auto);
@@ -429,6 +475,10 @@ font-size: 1.6em;
   .mobile-index-carousel{
     display: none;
   }
+  /*--- GAMESTORE ---*/
+  .gamestore-filter{
+    padding: 0 0 30px 0;
+  } 
   /*---ESPORTS GALERÍA---*/
   .gallery-section .gallery-box{
     grid-template-columns: repeat(4, auto);
@@ -447,12 +497,15 @@ font-size: 1.6em;
   .index-soonin{
     padding: 0 100px 0 100px;
   }
-  .news-title h1{
-    font-size: 60px;
-    color: yellow;
-  }
   .main-news, .main-esports{
-    padding: 0 80px 30px 80px;
+    padding: 20px 80px 30px 80px;
+  }
+  /*---- GAMESTORE ----*/
+  .gamestore-filter{
+    padding: 0 200px 50px 200px;
+  }
+  .consoles-cards{
+    padding: 0 60px 60px 60px
   }
   /*---ESPORTS TABLAS DE PREMIOS---*/
   .esports-tables{
@@ -463,5 +516,4 @@ font-size: 1.6em;
     width: 400px;
   }
 }
-
 

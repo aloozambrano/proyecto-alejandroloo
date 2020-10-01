@@ -32,7 +32,7 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i> TOP</button>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="images/img-header/FG_logo.svg" width="30" height="30" class="d-inline-block align-top"
           alt="Logo prinicipal" loading="lazy">
         FROM GAMES
@@ -72,7 +72,155 @@
       </div>
     </nav>
   </header>
+  <!----------------BANNER PRINCIPAL CONSOLES------------------>
+  <div class="consoles-title">
+    <picture>
+      <source srcset="images/img-consoles/consoles-banner.jpg" type="image/svg+xml" media="(min-width: 1400px)">
+      <source srcset="images/img-consoles/consoles-banner.jpg" type="image/svg+xml" media="(min-width: 600px)">
+      <source srcset="images/img-consoles/consoles-banner-mobile.jpg" type="image/svg+xml" media="(min-width: 600px)">
+      <img src="images/img-consoles/consoles-banner-mobile.jpg" class="img-fluid img-thumbnail" alt="banner-title-news">
+  </div>
+  <!---FLECHA ANIMACIÓN-->
+  <div class="arrow-down">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+  <!------------------ GAMES PRODUCT FILTER -------------------------------->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="filter-list">
+        <h3>GAME CONSOLES</h3>
+      </div>
+      <div class="gamestore-filter">
+        <button class="btn btn-default filter-button active" data-filter="all">All</button>
+        <button class="btn btn-default filter-button" data-filter="playstation">PLAY STATION</button>
+        <button class="btn btn-default filter-button" data-filter="xbox">XBOX</button>
+        <button class="btn btn-default filter-button" data-filter="nintendo">NINTEDO</button>
+      </div>
+    </div>
 
+    <div class="consoles-cards">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">
+        <!---- PLAYSTATION ---->
+        <div class="col mb-3 ">
+          <div class="packedition card product filter playstation">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-consoles/consoles-playstation-4.jpg" alt="Card image cap">
+            </div>
+            <div class="packs card-body text-center">
+              <h6 class="card-title">PS4 SLIM - 1TB</h6>
+              <p class="card-text">Price: $500</p>
+              <a href="#" class="btn btn-primary">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 ">
+          <div class="packedition card product filter playstation">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-consoles/consoles-playstation-4-pro.jpg" alt="Card image cap">
+            </div>
+            <div class="packs card-body text-center">
+              <h6 class="card-title">PS4 PRO - 2TB</h6>
+              <p class="card-text">Price: $710</p>
+              <a href="#" class="btn btn-primary">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 ">
+          <div class="packedition card product filter playstation">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-consoles/consoles-playstation-4-accessories.jpg"
+                alt="Card image cap">
+            </div>
+            <div class="packs card-body text-center">
+              <h6 class="card-title">PS4 - PACK ACCESSORIES</h6>
+              <p class="card-text">Price: $710</p>
+              <a href="#" class="btn btn-primary">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <!---- MICROSOFT XBOX ONE ---->
+        <div class="col mb-3 ">
+          <div class="packedition card product filter xbox">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-consoles/consoles-xbox-one.jpg" alt="Card image cap">
+            </div>
+            <div class="packs card-body text-center">
+              <h6 class="card-title">Microsoft XBOX ONE - 1TB</h6>
+              <p class="card-text">Price: $500</p>
+              <a href="#" class="btn btn-primary">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 ">
+          <div class="packedition card product filter xbox">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-consoles/consoles-xbox-one-s.jpg" alt="Card image cap">
+            </div>
+            <div class="packs card-body text-center">
+              <h6 class="card-title">Microsoft XBOX ONE S - 1TB</h6>
+              <p class="card-text">Price: $700</p>
+              <a href="#" class="btn btn-primary">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 ">
+          <div class="packedition card product filter xbox">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-consoles/consoles-xbox-one-accessories.jpg"
+                alt="Card image cap">
+            </div>
+            <div class="packs card-body text-center">
+              <h6 class="card-title">Microsoft XBOX PACK ACCESSORIES</h6>
+              <p class="card-text">Price: $700</p>
+              <a href="#" class="btn btn-primary">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <!---- NINTENDO SWITCH ---->
+        <div class="col mb-3 ">
+          <div class="packedition card product filter nintendo">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-consoles/consoles-nintendo-switch.jpg" alt="Card image cap">
+            </div>
+            <div class="packs card-body text-center">
+              <h6 class="card-title">NINTENDO SWITCH - Blue & Red Joy</h6>
+              <p class="card-text">Price: $550</p>
+              <a href="#" class="btn btn-primary">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 ">
+          <div class="packedition card product filter nintendo">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-consoles/consoles-nintendo-switch-lite.jpg"
+                alt="Card image cap">
+            </div>
+            <div class="packs card-body text-center">
+              <h6 class="card-title">NINTENDO SWITCH LITE- Tuq</h6>
+              <p class="card-text">Price: $300</p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 ">
+          <div class="packedition card product filter nintendo">
+            <div class="img-pack">
+              <img class="card-img-top" src="images/img-consoles/consoles-nintendo-switch-accessories.jpg"
+                alt="Card image cap">
+            </div>
+            <div class="packs card-body text-center">
+              <h6 class="card-title">NINTENDO - PACK ACCESSORIES</h6>
+              <p class="card-text">Price: $300</p>
+              <a href="#" class="btn btn-primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
   <!---------------------FOOTER----------------------->
   <footer>
     <div class="container-fluid d-flex justify-content-around">

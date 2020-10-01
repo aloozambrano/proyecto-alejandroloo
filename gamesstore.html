@@ -33,7 +33,7 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i> TOP</button>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="images/img-header/FG_logo.svg" width="30" height="30" class="d-inline-block align-top"
           alt="Logo principal" loading="lazy">
         FROM GAMES
@@ -73,7 +73,437 @@
       </div>
     </nav>
   </header>
+  <!----------------BANNER PRINCIPAL GAMESTORE------------------>
+  <div class="gamestore-title">
+    <picture>
+      <source srcset="images/img-gamestore/gamestore-banner.jpg" type="image/svg+xml" media="(min-width: 1400px)">
+      <source srcset="images/img-gamestore/gamestore-banner.jpg" type="image/svg+xml" media="(min-width: 600px)">
+      <source srcset="images/img-gamestore/gamestore-banner-mobile.jpg" type="image/svg+xml" media="(min-width: 600px)">
+      <img src="images/img-gamestore/gamestore-banner-mobile.jpg" class="img-fluid img-thumbnail"
+        alt="banner-title-news">
+  </div>
+  <!---FLECHA ANIMACIÓN-->
+  <div class="arrow-down">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+  <!------------------ GAMES PRODUCT FILTER -------------------------------->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="filter-list">
+        <h3>CATEGORIES</h3>
+      </div>
+      <div class="gamestore-filter">
+        <button class="btn btn-default filter-button active" data-filter="all">All</button>
+        <button class="btn btn-default filter-button" data-filter="presales">PRESALES</button>
+        <button class="btn btn-default filter-button" data-filter="bestsellers">BESTSALLERS</button>
+        <button class="btn btn-default filter-button" data-filter="hotsale">HOTSALE</button>
+        <button class="btn btn-default filter-button" data-filter="featured">FEATURED</button>
+      </div>
+    </div>
 
+    <div class="gamestore-cards">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-6 ">
+        <!---- GAMESTORE PRESALES ---->
+        <div class="col mb-3 product filter presales">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-cyberpunk.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">CYBERPUNK 2077</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Reserve now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter presales">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-assasinscreed.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">ASSASSIN'S CREED</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Reserve now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter presales">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-fifa21.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">FIFA 21</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Reserve now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter presales">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-halo5.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">HALO 5</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Reserve now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter presales">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-pokemonshield.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">POKEMON SHIELD</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Reserve now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter presales">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/presale/presale-supercampeones.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">CAPTAIN TSUBASA</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Reserve now!</a>
+            </div>
+          </div>
+        </div>
+        <!---- GAMESTORE BESTSALLERS ---->
+        <div class="col mb-3 product filter bestsellers">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/ps-godofwar3.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">GOD OF WAR 3</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter bestsellers">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/ps-callofduty.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">INFINITE WARFARE</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter bestsellers">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/x-deadspace.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">DEAD SPACE 3</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter bestsellers">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/x-sekiro.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">SEKIRO</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter bestsellers">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/nintendo-zelda.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">LEGEND OF ZELDA</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter bestsellers">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/bestsellers/nintendo-doom.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">D O O M</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <!---- GAMESTORE HOTSALES ---->
+        <div class="col mb-3 product filter hotsale">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/hotsale/ps-gtav.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">GTA V</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">-80% / Price: $10</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter hotsale">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/hotsale/ps-uncharted.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">UNCHARTED 4</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">-80% / Price: $10</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter hotsale">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/hotsale/x-left4dead2.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">LEFT 4 DEAD 2</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">-80% / Price: $10</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter hotsale">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/hotsale/x-resident.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">RESIDENT EVIL</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">-80% / Price: $10</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter hotsale">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/hotsale/nintendo-allstars.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">ALL STARS</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">-80% / Price: $10</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter hotsale">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/hotsale/nintendo-smashbros.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">SMASH BROS</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">-80% / Price: $10</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <!---- GAMESTORE JUEGOS DESTACADOS ------------->
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/playstation/ps-dbz.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">DBZ XENOVERSE</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/playstation/ps-tlou.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">THE LAST OF US 2</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/xbox/x-titanfall.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">TITANFALL 2</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/xbox/x-tombraider.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">TOMB RIDER</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/nintendo/nintendo-darksouls.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">DARK SOULS</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/nintendo/nintendo-pokemon.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">POKEMON SWORD</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/playstation/ps-fornite.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">FORNITE</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/playstation/ps-red-dead-redemption-2.jpg"
+                alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">RED DEAD II</h6>
+              <p class="card-text">Play Station 4</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/xbox/x-minecraft.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">MINECRAFT</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/xbox/x-fallout4.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">FALLOUT 4</h6>
+              <p class="card-text">Xbox ONE</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/nintendo/nintendo-bayonetta-2.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">BAYONETTA II</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3 product filter featured">
+          <div class="card">
+            <div class="img-card">
+              <img class="card-img-top" src="images/img-games/nintendo/nintendo-mortalkombat-11.jpg"
+                alt="Card image cap">
+            </div>
+            <div class="card-body text-center">
+              <h6 class="card-title">MORTAL KOMBAT 11</h6>
+              <p class="card-text">Nintendo Switch</p>
+              <p class="card-text">Price: $40</p>
+              <a href="#" class="btn btn-danger">Buy now!</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <!---------------------FOOTER----------------------->
   <footer>
     <div class="container-fluid d-flex justify-content-around">
